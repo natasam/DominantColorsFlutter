@@ -1,16 +1,7 @@
-# dominant_colors
+# dominant_colors 
+### (soon on the pub.dev)
+A  Flutter project that extracts dominant colors from images using the K-means algorithm.
 
-A new Flutter project.
+## Screenshot examples
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  <img src="screenshots/1.png" alt="Flutter screenshot 1" width="200"> <img src="screenshots/2.png" alt="Flutter screenshot 2" width="200"> <img src="screenshots/3.png" alt="Flutter screenshot 3" width="200"> <img src="screenshots/0.png" alt="Flutter screenshot 0" width="200">
