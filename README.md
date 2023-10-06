@@ -1,2 +1,2 @@
 # DominantColorsFlutter
-Dominant colors will extract the dominant colours from the image using K-means algorithm and gives you how many colours you need.
+Dominant colors will extract the dominant colors from the image using the K-means algorithm and give you how many colors you need from your image.
