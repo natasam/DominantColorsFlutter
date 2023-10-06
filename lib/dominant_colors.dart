@@ -1,14 +1,19 @@
+import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image/image.dart' as imageLib;
 
 class DominantColors {
   final Uint8List bytes;
+  //final String photoUrl;
   int dominantColorsCount = 2; // We want to extract two dominant colors
 
   DominantColors(
       {required this.bytes, required this.dominantColorsCount});
+
+
 
   // Calculate Euclidean distance between two colors
   double distance(Color a, Color b) {
@@ -139,5 +144,13 @@ class DominantColors {
     g = g ~/ length;
     b = b ~/ length;
     return Color.fromRGBO(r, g, b, 1);
+  }
+
+    Future<Uint8List> fetchImage(String photoUrl) async {
+    var httpClient = HttpClient();
+    var request = await httpClient.getUrl(Uri.parse(photoUrl));
+    var response = await request.close();
+    var bytes = await consolidateHttpClientResponseBytes(response);
+    return bytes;
   }
 }
